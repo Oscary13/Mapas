@@ -317,12 +317,26 @@ function initMap() {
         var latitud = event.latLng.lat();
         var longitud = event.latLng.lng();
 
+
         // Usar la API de Geocodificación para obtener la dirección
         var geocoder = new google.maps.Geocoder();
         geocoder.geocode({ location: event.latLng }, function (results, status) {
             if (status === 'OK') {
                 if (results[0]) {
                     var direccion = results[0].formatted_address;
+
+                    var latitud = event.latLng.lat();
+                    var longitud = event.latLng.lng();
+
+                    // Actualizar los valores de los labels en el HTML
+                    //document.getElementById('latitud-label').value = latitud;
+                    //document.getElementById('longitud-label').value = longitud;
+                    //document.getElementById('direccion-label').value = direccion;
+
+                    document.getElementById('<%= latitudTextBox.ClientID %>').value = latitud;
+                    document.getElementById('<%= longitudTextBox.ClientID %>').value = longitud;
+                    document.getElementById('<%= direccionTextBox.ClientID %>').value = direccion;
+
                     alert('Latitud: ' + latitud + '\nLongitud: ' + longitud + '\nDirección: ' + direccion);
                 } else {
                     alert('Latitud: ' + latitud + '\nLongitud: ' + longitud + '\nNo se encontró dirección.');

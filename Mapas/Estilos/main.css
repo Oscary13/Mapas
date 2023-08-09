@@ -1,0 +1,13 @@
+﻿.pac-input {
+    display: block;
+    width: 80%; /* El ancho del input será el 80% del contenedor del mapa */
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Estilos para el contenedor del mapa */
+#mapa {
+    width: 100%; /* Ancho del mapa al 100% del contenedor */
+    height: 400px;
+}

@@ -80,13 +80,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Estilos\main.css" />
     <Content Include="Global.asax" />
+    <Content Include="js\main.js" />
     <Content Include="js\mapa3.js" />
     <Content Include="js\mapa2.js" />
     <Content Include="js\mapa.js" />
     <Content Include="Vistas\mapa3.aspx" />
     <Content Include="Vistas\Mapas.aspx" />
     <Content Include="Vistas\Mapas2.aspx" />
+    <Content Include="Vistas\Pruebas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +118,13 @@
     </Compile>
     <Compile Include="Vistas\Mapas2.aspx.designer.cs">
       <DependentUpon>Mapas2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Pruebas.aspx.cs">
+      <DependentUpon>Pruebas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Pruebas.aspx.designer.cs">
+      <DependentUpon>Pruebas.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
