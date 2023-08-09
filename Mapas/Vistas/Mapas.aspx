@@ -22,7 +22,7 @@
                                 function initMap_<%# Eval("ID") %>() {
                                     var latLng = new google.maps.LatLng(<%# Eval("Latitud") %>, <%# Eval("Longitud") %>);
                                     var mapOptions = {
-                                        zoom: 15,
+                                        zoom: 19,
                                         center: latLng
                                     };
                                     var map = new google.maps.Map(document.getElementById('<%# "map_" + Eval("ID") %>'), mapOptions);

@@ -11,7 +11,13 @@ namespace Mapas.Vistas
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            mapa.Visible = false;
+        }
 
+
+        protected void btnMostrarMapa_Click(object sender, EventArgs e)
+        {
+            mapa.Visible = true;
         }
     }
 }
