@@ -9,9 +9,6 @@ namespace Mapas.Vistas
 {
     public partial class mapa3 : System.Web.UI.Page
     {
-        public int YourLatitudeVariable { get; set; }
-        public int YourLongitudeVariable { get; set; }
-
         protected void Page_Load(object sender, EventArgs e)
         {
             mapa.Visible = false;
@@ -22,6 +19,13 @@ namespace Mapas.Vistas
         protected void btnMostrarMapa_Click(object sender, EventArgs e)
         {
             mapa.Visible = true;
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            var uno = latitudTextBox.Text;
+            var dos = longitudTextBox.Text;
+            var tres = direccionTextBox.Text;
         }
     }
 

@@ -120,6 +120,7 @@
         <input id="direccion-label" type="text" placeholder="Dirección">--%>
 
         <br />
+        <asp:Button ID="Button1" runat="server" Text="Obtener datos" OnClick="Button1_Click" />
     </form>
 
 
